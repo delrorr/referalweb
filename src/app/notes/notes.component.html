@@ -1,0 +1,78 @@
+<div class="main-content">
+    <section class="first">
+        <div class="container">
+        <!-- MultiStep Form -->
+        <div class="row form-row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+            <div class="left-col">
+                <h1>{{doctors_name}}</h1>
+                <div class="profile-n-info">
+                <div class="logo-wrapper">
+                    <img src="{{doctors_pic}}" alt="">
+                </div>
+                <div class="info-wrapper">
+                    <ul class="ratings">
+                    <li>
+                        <img src="referalweb/assets/star.png" alt="">
+                        <h5>4.9</h5>
+                    </li>
+                    <li>
+                        <span>23</span>
+                        <h5>reviews</h5>
+                    </li>
+                    <li>
+                        <span>35</span>
+                        <h5>referrals</h5>
+                    </li>
+                    </ul>
+                    <h4>DIGITAL REFERRAL CARDS</h4>
+                    <ul class="address-n-contact">
+                    <li><a href="https://www.google.com/maps/place/3425+Grant+Ave,+Grove+City,+OH+43123,+USA/data=!4m2!3m1!1s0x88389b395f085ae7:0xa00b1b812b788471?sa=X&ved=2ahUKEwjOleKq7_HdAhVC4YUKHdFEA7QQ8gEwAHoECAAQAQ">3425 Grant Ave,<br> Grove City, OH 43123</a></li>
+                    <li><a href="tel:(614) 594-0389">(614) 594-0389</a></li>
+                    <li><a href="http://flutecode.com/referalweb/www.stonerperio.com">www.stonerperio.com</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="additional-info">
+                    <h4><a href="#">ADDITIONAL INFO</a></h4>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-7 col-sm-12 col-xs-12">
+            <div id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                </ul>
+
+                <fieldset class="notes-fs">
+                    <input type="button" name="previous" class="previous" value="Previous" (click)="previousPage()"/>
+                    <h2 class="step-title">NOTES</h2>
+                    <textarea name="notes" id="notes" cols="30" rows="4"></textarea>
+                    <ul class="step4-btns">
+                        <li><a [routerLink]="['/notes']">upload</a></li>
+                        <li><a [routerLink]="['/notes']">screen capture</a></li>
+                    </ul>
+                    <br />
+                    <br />
+                    <br />
+                    <div class="label-container">This has been reviewed by Referral Sender
+                        <input type="checkbox" id="agreeBtn" (click)="clickOperation($event)">
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="button" name="next" class="next action-button" value="Next" (click)="nextPage()"/>
+                    <a [routerLink]="['/notes',doctors_name,doctors_pic]" class="tutorial-link floating-tutorial">tutorial?</a>
+                </fieldset> 
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+</div>

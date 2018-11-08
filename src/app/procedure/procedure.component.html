@@ -1,0 +1,204 @@
+<div class="main-content">
+    <section class="first">
+        <div class="container">
+        <!-- MultiStep Form -->
+        <div class="row form-row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+            <div class="left-col">
+                <h1>{{doctors_name}}</h1>
+                <div class="profile-n-info">
+                <div class="logo-wrapper">
+                    <img src="{{doctors_pic}}" alt="">
+                </div>
+                <div class="info-wrapper">
+                    <ul class="ratings">
+                    <li>
+                        <img src="referalweb/assets/star.png" alt="">
+                        <h5>4.9</h5>
+                    </li>
+                    <li>
+                        <span>23</span>
+                        <h5>reviews</h5>
+                    </li>
+                    <li>
+                        <span>35</span>
+                        <h5>referrals</h5>
+                    </li>
+                    </ul>
+                    <h4>DIGITAL REFERRAL CARDS</h4>
+                    <ul class="address-n-contact">
+                    <li><a href="https://www.google.com/maps/place/3425+Grant+Ave,+Grove+City,+OH+43123,+USA/data=!4m2!3m1!1s0x88389b395f085ae7:0xa00b1b812b788471?sa=X&ved=2ahUKEwjOleKq7_HdAhVC4YUKHdFEA7QQ8gEwAHoECAAQAQ">3425 Grant Ave,<br> Grove City, OH 43123</a></li>
+                    <li><a href="tel:(614) 594-0389">(614) 594-0389</a></li>
+                    <li><a href="http://flutecode.com/referalweb/www.stonerperio.com">www.stonerperio.com</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="additional-info">
+                    <h4><a href="#">ADDITIONAL INFO</a></h4>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-7 col-sm-12 col-xs-12">
+            <div id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+
+            <fieldset>
+                    <input type="button" name="previous" class="previous" value="Previous" (click)="previousPage()"/>
+                    <h2 class="step-title">SELECT TEETH / PROCEDURE</h2>
+                    <ul class="toggle-switch">
+                        <li><span id="perm" [className]="permClass" (click)="togglePrimClass()">perm</span></li>
+                        <li><span id="prim" [className]="primClass" (click)="togglePermClass()">prim</span></li>
+                    </ul>
+                    <div class="for-resp">
+                        <div [className]="toothchart">
+                        <ul class="toothchart upperteeths">
+                            <li><input type="checkbox" class="teeth-checkbox teeth1" (click)="clickTooth($event)" name="1"><span>1</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth2" (click)="clickTooth($event)" name="2"><span>2</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth3" (click)="clickTooth($event)" name="3"><span>3</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth4" (click)="clickTooth($event)" name="4"><span>4</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth5" (click)="clickTooth($event)" name="5"><span>5</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth6" (click)="clickTooth($event)" name="6"><span>6</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth7" (click)="clickTooth($event)" name="7"><span>7</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth8" (click)="clickTooth($event)" name="8"><span>8</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth9" (click)="clickTooth($event)" name="9"><span>9</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth10" (click)="clickTooth($event)" name="10"><span>10</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth11" (click)="clickTooth($event)" name="11"><span>11</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth12" (click)="clickTooth($event)" name="12"><span>12</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth13" (click)="clickTooth($event)" name="13"><span>13</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth14" (click)="clickTooth($event)" name="14"><span>14</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth15" (click)="clickTooth($event)" name="15"><span>15</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth16" (click)="clickTooth($event)" name="16"><span>16</span></li>
+                        </ul>
+                        <ul class="toothchart lowerteeths">
+                            <li><span>32</span><input type="checkbox" class="teeth-checkbox teeth32" (click)="clickTooth($event)" name="32"></li>
+                            <li><span>31</span><input type="checkbox" class="teeth-checkbox teeth31" (click)="clickTooth($event)" name="31"></li>
+                            <li><span>30</span><input type="checkbox" class="teeth-checkbox teeth30" (click)="clickTooth($event)" name="30"></li>
+                            <li><span>29</span><input type="checkbox" class="teeth-checkbox teeth29" (click)="clickTooth($event)" name="29"></li>
+                            <li><span>28</span><input type="checkbox" class="teeth-checkbox teeth28" (click)="clickTooth($event)" name="28"></li>
+                            <li><span>27</span><input type="checkbox" class="teeth-checkbox teeth27" (click)="clickTooth($event)" name="27"></li>
+                            <li><span>26</span><input type="checkbox" class="teeth-checkbox teeth26" (click)="clickTooth($event)" name="26"></li>
+                            <li><span>25</span><input type="checkbox" class="teeth-checkbox teeth25" (click)="clickTooth($event)" name="25"></li>
+                            <li><span>24</span><input type="checkbox" class="teeth-checkbox teeth24" (click)="clickTooth($event)" name="24"></li>
+                            <li><span>23</span><input type="checkbox" class="teeth-checkbox teeth23" (click)="clickTooth($event)" name="23"></li>
+                            <li><span>22</span><input type="checkbox" class="teeth-checkbox teeth22" (click)="clickTooth($event)" name="22"></li>
+                            <li><span>21</span><input type="checkbox" class="teeth-checkbox teeth21" (click)="clickTooth($event)" name="21"></li>
+                            <li><span>20</span><input type="checkbox" class="teeth-checkbox teeth20" (click)="clickTooth($event)" name="20"></li>
+                            <li><span>19</span><input type="checkbox" class="teeth-checkbox teeth19" (click)="clickTooth($event)" name="19"></li>
+                            <li><span>18</span><input type="checkbox" class="teeth-checkbox teeth18" (click)="clickTooth($event)" name="18"></li>
+                            <li><span>17</span><input type="checkbox" class="teeth-checkbox teeth17" (click)="clickTooth($event)" name="17"></li>
+                        </ul>
+                        </div><div [className]="toothchart_prim">
+                        <ul class="toothchart-prim upperteeths">
+                            <li><input type="checkbox" class="teeth-checkbox teeth4" (click)="clickTooth($event)"><span>a</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth5" (click)="clickTooth($event)"><span>b</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth6" (click)="clickTooth($event)"><span>c</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth7" (click)="clickTooth($event)"><span>d</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth8" (click)="clickTooth($event)"><span>e</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth9" (click)="clickTooth($event)"><span>f</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth10" (click)="clickTooth($event)"><span>g</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth11" (click)="clickTooth($event)"><span>h</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth12" (click)="clickTooth($event)"><span>i</span></li>
+                            <li><input type="checkbox" class="teeth-checkbox teeth13" (click)="clickTooth($event)"><span>j</span></li>
+                        </ul>
+                        <ul class="toothchart-prim lowerteeths">
+                            <li><span>t</span><input type="checkbox" class="teeth-checkbox teeth29" (click)="clickTooth($event)"></li>
+                            <li><span>s</span><input type="checkbox" class="teeth-checkbox teeth28" (click)="clickTooth($event)"></li>
+                            <li><span>r</span><input type="checkbox" class="teeth-checkbox teeth27" (click)="clickTooth($event)"></li>
+                            <li><span>q</span><input type="checkbox" class="teeth-checkbox teeth26" (click)="clickTooth($event)"></li>
+                            <li><span>p</span><input type="checkbox" class="teeth-checkbox teeth25" (click)="clickTooth($event)"></li>
+                            <li><span>o</span><input type="checkbox" class="teeth-checkbox teeth24" (click)="clickTooth($event)"></li>
+                            <li><span>n</span><input type="checkbox" class="teeth-checkbox teeth23" (click)="clickTooth($event)"></li>
+                            <li><span>m</span><input type="checkbox" class="teeth-checkbox teeth22" (click)="clickTooth($event)"></li>
+                            <li><span>l</span><input type="checkbox" class="teeth-checkbox teeth21" (click)="clickTooth($event)"></li>
+                            <li><span>k</span><input type="checkbox" class="teeth-checkbox teeth20" (click)="clickTooth($event)"></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="teeth_checkbox">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                      <div class="label-container">Root Canal Treatment
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="label-container">Apicoectomy
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="label-container">Re-Treat
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="label-container">Consultation
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="label-container">Second Opinion
+                                            <input type="checkbox" (click)="clickOperation($event)">
+                                            <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="label-container">Lorem Ipsum
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                      <div class="label-container">Lorem Ipsum 2
+                                            <input type="checkbox" (click)="clickOperation($event)">
+                                            <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="label-container">Lorem Ipsum 3
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="label-container">Lorem Ipsum 3
+                                        <input type="checkbox" (click)="clickOperation($event)">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    <input type="button" name="next" class="next action-button" value="Next" (click)="nextPage()"/>
+                    <a [routerLink]="['/procedure',doctors_name,doctors_pic]" class="tutorial-link floating-tutorial">tutorial?</a>
+                </fieldset>  
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>        
+</div>
